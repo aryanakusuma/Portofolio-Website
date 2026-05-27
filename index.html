@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Udin Portfolio</title>
+
+    <link rel="icon"
+      href="favicon.ico">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">
+            ARYANA KUSUMA<span>.</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#agency">Agency</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-left">
+            <p class="hero-subtitle">
+                CREATIVE DESIGNER
+            </p>
+
+            <h1>
+                Graphic Designer <br>
+                Media Agency
+            </h1>
+
+            <p class="hero-description">
+                Saya menciptakan desain visual yang estetis dan menarik dengan pendekatan kreatif modern.
+                Saya juga menjalankan agensi media kreatif yang berfokus pada branding digital dan pengalaman visual.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#project" class="btn-primary">
+                    Explore Works
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+
+            <div class="profile-card">
+
+                <div class="card-glow"></div>
+
+                <img src="gweh.jpeg" alt="profile" />
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <p>ABOUT ME</p>
+            <h2>Who Am I?</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-card">
+                <p>
+                    Saya adalah seorang Desainer Grafis yang fokus pada pembuatan media digital seperti poster, banner,
+                    konten media sosial, dan aset branding visual.
+                    Saya juga ahli dalam fotografi, videografi, dan pengeditan untuk menghadirkan pengalaman digital
+                    yang kreatif dan menarik.<br>
+                    Selain itu, saya menjalankan agensi kreatif bernama Prisma Arka Creative, yang menyediakan layanan
+                    media digital dan branding kreatif untuk bisnis, komunitas, dan organisasi.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+
+        <div class="section-title">
+            <p>MY WORKS</p>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <div class="media-box">
+                    <img src="gambar/poster_1.png   " alt="project">
+                </div>
+
+                <div class="project-content">
+                    <h3>Poster SPMB Sekolah</h3>
+
+                    <p>
+                        Poster SPMB ukuran 4:5 untuk feed Instagram
+                    </p>
+
+                    <button onclick="openImage('gambar/poster_1.png')">
+                        View Project
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 2 VIDEO -->
+            <div class="project-card">
+
+                <div class="media-box">
+                    <video muted>
+                        <source src="gambar/video_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="project-content">
+                    <h3>Editing Video</h3>
+
+                    <p>
+                        Project video keseharian pembelajaran di sekolah
+                    </p>
+
+                    <button onclick="openVideo('gambar/video_1.mp4')">
+                        View Project
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <div class="media-box">
+                    <img src="gambar/poster_2.png"project">
+                </div>
+
+                <div class="project-content">
+                    <h3>Portfolio Concept</h3>
+                    <p>
+                        Pamflet bertema menyambut Ramadhan, ukuran 3:4 yang cocok untuk feed IG mu
+                    </p>
+                    <button onclick="openImage('gambar/poster_2.png')">
+                        View Project
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+            <div class="view-all-container">
+                <a href="project.html" class="view-all-btn">
+                    View All Projects
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= AGENCY ================= -->
+    <section class="agency" id="agency">
+
+        <div class="section-title">
+            <p>MY AGENCY</p>
+            <h2>Prisma Arka Creative</h2>
+        </div>
+
+        <div class="agency-card">
+
+            <div class="agency-left">
+                <h3>Creative Media Agency</h3>
+
+                <p>
+                    Prisma Arka Creative adalah agensi media kreatif yang berfokus
+                    pada pembuatan media digital, visual branding, fotografi,
+                    videografi, dan konten kreatif untuk membantu brand,
+                    komunitas, dan organisasi tampil lebih profesional.
+                </p>
+            </div>
+
+            <div class="agency-services">
+                <div class="service-item">Graphic Design</div>
+                <div class="service-item">Social Media Content</div>
+                <div class="service-item">Photography</div>
+                <div class="service-item">Videography</div>
+                <div class="service-item">Video Editing</div>
+                <div class="service-item">Digital Branding</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <p>CONTACT</p>
+            <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <a href="https://www.instagram.com/ryaan.ksm/">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://wa.me/6289692015426" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+            <a href="https://www.tiktok.com/@prisma.arka.creative" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+                TikTok
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>
+            © 2026 Arya Portfolio & Website. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="project-modal" id="projectModal">
+
+        <span class="close-btn" id="closeModal">&times;</span>
+
+        <!-- IMAGE -->
+        <img id="modalImage" src="" alt="project preview">
+
+        <!-- VIDEO -->
+        <video id="modalVideo" controls>
+            <source id="videoSource" src="" type="video/mp4">
+        </video>
+
+    </div>
+
+</body>
+
+</html>
